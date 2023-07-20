@@ -1,0 +1,7 @@
+<table>
+<tr *ngFor="let row of grid; let i = index">
+  <td *ngFor="let col of row; let j = index">
+    <input type=text id="sudoku-input-[{{i.toString()}}-{{j.toString()}}]" value={{col}} class="sudoku-input" maxlength="2" oninput="this.value=this.value.replace(/[^0-9]/g,'0').substr(1)">
+  </td>
+</tr>
+</table>
