@@ -54,7 +54,6 @@ export class AppComponent implements OnInit {
 
     } catch (SyntaxError) {
       alert("Invalid API response")
-      this.FillSudoku([[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,0,0,0,0]])
 
     }
   }

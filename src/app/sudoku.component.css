@@ -1,7 +1,51 @@
-.sudoku-input{
-  width:20px;
-  height: 20px;
-  border-width: 0;
-  border-radius: 3px;
-  text-align: center;
+.sudoku-table {
+  border-collapse: collapse;
+}
+
+.sudoku-table tr:first-child td {
+	border-top-color: black;
+}
+.sudoku-table tr:nth-child(3n) td {
+	border-bottom-color: black;
+}
+
+.sudoku-table td {
+	border: 1px solid lightgrey;
+	height: 40px;
+	width: 40px;
+}
+.sudoku-table td:first-child {
+	border-left-color: black;
+}
+.sudoku-table td:nth-child(3n) {
+	border-right-color: black;
+}
+.sudoku-table input {
+	padding: 0;
+	border: 0;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+}
+
+@keyframes select {
+  from {background-color: white;}
+  to {background-color: #e0e0e0ee;}
+}
+
+@keyframes deselect {
+  from {background-color: #e0e0e0ee;}
+  to {background-color: white;}
+}
+
+.sudoku-table input {
+	animation-name: deselect;
+  animation-duration: 0.5s;
+  background-color: white;
+}
+
+.sudoku-table input:focus {
+	animation-name: select;
+  animation-duration: 0.5s;
+  background-color: #e0e0e0ee;
 }
