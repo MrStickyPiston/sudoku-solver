@@ -10,5 +10,8 @@
     "@angular/platform-browser": "^16.1.6",
     "@angular/platform-browser-dynamic": "^16.1.6",
     "angular": "^1.8.3"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1"
   }
 }

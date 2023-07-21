@@ -5,7 +5,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "demo": {
+    "sudoku-solver": {
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -39,7 +39,7 @@
             "assets": [],
             "index": "src/index.html",
             "main": "src/main.ts",
-            "outputPath": "dist/demo",
+            "outputPath": "dist/sudoku-solver",
             "scripts": [],
             "styles": [
               "src/global_styles.css"
@@ -50,7 +50,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "demo:build"
+            "browserTarget": "sudoku-solver:build"
           }
         },
         "lint": {
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "demo:build:development"
+              "browserTarget": "sudoku-solver:build:development"
             },
             "production": {
-              "browserTarget": "demo:build:production"
+              "browserTarget": "sudoku-solver:build:production"
             }
           },
           "defaultConfiguration": "development"
