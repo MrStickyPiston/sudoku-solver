@@ -1,0 +1,27 @@
+.sudoku {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sudoku sudoku-grid {
+  border-width: 1px;
+  border-color: black;
+  border-radius: 1px;
+}
+
+.sudoku-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+
+  margin: 10px 0px 10px 0px;
+}
+
+.sudoku-buttons button {
+  width: 100px;
+  padding: 3px 0px 3px 0px;
+  margin: 0px 10px 0px 10px;
+  border-radius: 10px;
+  border: 0px;
+}

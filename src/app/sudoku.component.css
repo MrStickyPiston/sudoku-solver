@@ -1,7 +1,37 @@
-.sudoku-input{
-  width:20px;
-  height: 20px;
-  border-width: 0;
-  border-radius: 3px;
-  text-align: center;
+.sudoku-table {
+  border-collapse: collapse;
+}
+
+.sudoku-table tr:first-child td {
+	border-top-color: black;
+}
+.sudoku-table tr:nth-child(3n) td {
+	border-bottom-color: black;
+}
+
+.sudoku-table td {
+	border: 1px solid lightgrey;
+	height: 40px;
+	width: 40px;
+}
+.sudoku-table td:first-child {
+	border-left-color: black;
+}
+.sudoku-table td:nth-child(3n) {
+	border-right-color: black;
+}
+.sudoku-table input {
+	padding: 0;
+	border: 0;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+}
+
+.sudoku-table input:hover {
+	background: #adadadea;
+}
+
+.sudoku-table input:focus {
+	background: #adadadd8;
 }
