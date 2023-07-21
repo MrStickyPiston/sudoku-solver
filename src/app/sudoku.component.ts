@@ -7,9 +7,5 @@ import { Component } from '@angular/core';
 })
 
 export class SudokuComponent {
-  grid = Array.from(new Array(9), _ => Array(9).fill(0));
-  
-  PostInput() {
-    
-  }
+  grid = Array.from(new Array(9), _ => Array(9).fill(''));
 }

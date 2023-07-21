@@ -28,10 +28,29 @@
 	text-align: center;
 }
 
-.sudoku-table input:hover {
-	background: #adadadea;
+@keyframes select {
+  from {background-color: white;}
+  to {background-color: #e0e0e0ee;}
+}
+
+@keyframes deselect {
+  from {background-color: #e0e0e0ee;}
+  to {background-color: white;}
+}
+
+.sudoku-table input {
+	animation-name: deselect;
+  animation-duration: 0.5s;
+  background-color: white;
 }
 
 .sudoku-table input:focus {
-	background: #adadadd8;
+	animation-name: select;
+  animation-duration: 0.5s;
+  background-color: #e0e0e0ee;
+}
+
+/* Block animations on load */
+sudoku-grid.loading {
+  animation-duration: 0s !important;
 }
