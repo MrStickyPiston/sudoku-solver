@@ -8,7 +8,7 @@ tasks:
   - name: Setup
     command: |
         npm install
-        alias nd="/workspace/sudoku-solver/node_modules/@angular/cli/bin/ng.js"
+        alias ng="/workspace/sudoku-solver/node_modules/@angular/cli/bin/ng.js"
         
   - name: Dev server
     command: /workspace/sudoku-solver/node_modules/@angular/cli/bin/ng.js serve --disable-host-check
