@@ -44,13 +44,13 @@ export class AppComponent implements OnInit {
     let grid = this.GetSudoku();
     console.log('Solving ' + JSON.stringify(grid));
 
-    let solved = await fetch(`/api/?grid=${JSON.stringify(grid)}`, {
+    let solved = await fetch(`/api/solve?grid=${JSON.stringify(grid)}`, {
       method: 'POST',
     });
-    let solvedGrid = await solved.text();
+    let solvedGrid = await solved.json();
     
     try {
-      this.FillSudoku(JSON.parse(solvedGrid));
+      this.FillSudoku(JSON.parse(solvedGrid["grid"]));
 
     } catch (SyntaxError) {
       alert("Invalid API response")
