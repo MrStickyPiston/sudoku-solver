@@ -37,7 +37,7 @@ export class AppComponent implements OnInit {
 
   ResetSudoku() {
     console.log('Reset sudoku');
-    this.FillSudoku(Array.from(new Array(9), (_) => Array(9).fill(0)));
+    this.FillSudoku(Array.from(new Array(9), (_) => Array(9).fill('')));
   }
 
   async SolveSudoku() {
